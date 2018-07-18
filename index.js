@@ -68,7 +68,7 @@ mongoose
     }
   )
   .then(() => {
-    
+
     console.log("Mongo Connected");
   })
   .catch(() => {
@@ -96,9 +96,9 @@ app.use("/users", users);
 // Fetches everything from the db
 
 app.get("/", (req, res) => {
-  const title = `Welcome ${req.user.name}`;
+  //  const title = `Welcome ${req.user.name}`;
   res.render("index", {
-    title: title
+    // title: title
   });
   //   res.send(req.name);
   //   res.send(req.name);
